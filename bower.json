@@ -1,0 +1,16 @@
+{
+  "name": "pants-observe",
+  "version": "0.0.1",
+  "authors": [
+    "Ganesha <reekoheek@gmail.com>"
+  ],
+  "description": "Object path observe using Object.observe (or polyfill)",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

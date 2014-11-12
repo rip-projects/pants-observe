@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Path Example</title>
+</head>
+<body>
+
+    <script type="text/javascript" src="../js/path.js"></script>
+
+    <script type="text/javascript">
+    (function(root) {
+        "use strict";
+
+        var path;
+        path = Path.get('hello.world');
+        console.log('path:', path);
+        path.iterateObjects({'hello': {'world': 'yay'}}, function(o, v) {
+            console.log('iterate:', o, v);
+        });
+    })(this);
+    </script>
+</body>
+</html>

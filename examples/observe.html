@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Observe Example</title>
+</head>
+<body>
+    <input type="text" value="Change this">
+    <span></span>
+
+    <script type="text/javascript" src="../js/weakmap.poly.js"></script>
+    <script type="text/javascript" src="../js/observe.poly.js"></script>
+    <script type="text/javascript" src="../js/path.js"></script>
+    <script type="text/javascript" src="../js/observe.js"></script>
+
+    <script type="text/javascript">
+    (function(root) {
+        "use strict";
+
+        var input = document.querySelector('input'),
+            span = document.querySelector('span'),
+            data = {
+                'value': input.value
+            };
+
+        input.addEventListener('keyup', function(evt) {
+            data.value = this.value;
+        });
+
+        pants.observe(data, 'value', function() {
+            span.innerHTML = data.value;
+        });
+
+        input.focus();
+    })(this);
+    </script>
+</body>
+</html>
