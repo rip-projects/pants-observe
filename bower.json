@@ -1,6 +1,6 @@
 {
   "name": "pants-observe",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "authors": [
     "Ganesha <reekoheek@gmail.com>"
   ],
@@ -14,6 +14,6 @@
     "tests"
   ],
   "dependencies": {
-    "pants-path": "xinix-technology/pants-path#~0.1.0"
+    "pants-path": "xinix-technology/pants-path#~0.1.5"
   }
 }
