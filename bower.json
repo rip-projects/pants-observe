@@ -12,5 +12,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "pants-path": "xinix-technology/pants-path#~0.1.0"
+  }
 }

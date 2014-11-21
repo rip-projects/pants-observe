@@ -63,7 +63,7 @@
 
         this.connect();
 
-        var pathO = Path.get(path);
+        var pathO = pants.path.get(path);
         if (pathO.length > 0) {
             Object.getNotifier(context).notify({
                 type: 'add',
@@ -121,24 +121,25 @@
         var that = this,
             names = {};
 
-        var path = Path.get(that.path);
+        var path = pants.path.get(that.path);
 
         changes.forEach(function(change) {
-            var indexName = change.name || '';
+            var indexName = change.name || '',
+                length = path.length;
 
             if (names[indexName]) {
                 return;
             }
 
-            if (path.length > 0 && path.indexOf(change.name) === -1) {
+            if (length > 0 && path.indexOf(change.name) === -1) {
                 return;
             }
 
             names[indexName] = indexName;
 
-            if (path.length === 0) {
+            if (length === 0) {
                 that.callback(changes);
-            } else if (path[path.length - 1] === change.name) {
+            } else if (path[length - 1] === change.name) {
 
                 if (change.oldValue instanceof Array) {
                     that.children.some(function(child) {
