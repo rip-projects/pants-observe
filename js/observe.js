@@ -161,13 +161,12 @@
 
                 that.callback(changes);
             } else {
-                var subPath = Path.get(path.slice(1)),
+                var subPath = pants.path.get(path.slice(1)),
                     subContext = that.context[path[0]] || {};
 
                 that.children.forEach(function(child) {
                     child.disconnect();
                 });
-
 
                 that.children.push(observe(subContext, subPath.toString(), that.callback));
 
