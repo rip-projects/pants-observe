@@ -2,7 +2,7 @@ pants-observe
 =============
 
 [![License](http://img.shields.io/badge/license-MIT-red.svg?style=flat-square)](https://github.com/xinix-technology/pants-observe/blob/master/LICENSE)
-[![Bower](http://img.shields.io/bower/v/xinix-technology/pants.svg?style=flat-square)](https://github.com/xinix-technology/pants-observe)
+[![Bower](http://img.shields.io/bower/v/xinix-technology/pants-observe.svg?style=flat-square)](https://github.com/xinix-technology/pants-observe)
 
 pants-observe adalah sebuah pustaka untuk melakukan aktif observasi terhadap perubahan yang terjadi pada sebuah object dan akan memanggil sebuah fungsi callback jika perubahan terjadi. Hal tersebut diinginkan jika seorang developer menginginkan setiap mutasi yang terjadi pada sebuah object dapat memicu perubahan-perubahan di bagian program yang lain juga.
 
