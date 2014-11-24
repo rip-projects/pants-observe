@@ -14,6 +14,6 @@
     "tests"
   ],
   "dependencies": {
-    "pants-path": "xinix-technology/pants-path"
+    "pants-path": "xinix-technology/pants-path#master"
   }
 }
