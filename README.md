@@ -1,5 +1,6 @@
-pants-observe
-=============
+# pants-observe
+
+> DEPRECATED: Please use [xin](https://github.com/xinix-technology/xin)
 
 [![License](http://img.shields.io/badge/license-MIT-red.svg?style=flat-square)](https://github.com/xinix-technology/pants-observe/blob/master/LICENSE)
 [![Bower](http://img.shields.io/bower/v/xinix-technology/pants-observe.svg?style=flat-square)](https://github.com/xinix-technology/pants-observe)
